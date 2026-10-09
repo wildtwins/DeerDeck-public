@@ -77,3 +77,8 @@ Thumbs.db
 !app/src/main/res/drawable-nodpi/ic_launcher_buck.png
 !play-assets/app-icon-512.png
 !play-assets/feature-graphic-1024x500.png
+# Explicitly reviewed fictional-data UI captures only
+!docs/gallery/01-observe.png
+!docs/gallery/03-stats.png
+!docs/gallery/04-history.png
+!docs/gallery/05-profiles.png

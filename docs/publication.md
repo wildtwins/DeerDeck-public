@@ -24,5 +24,11 @@ copy historical Git objects into a new public repository.
 The public repository is `wildtwins/DeerDeck-public`, with fresh history and the
 [MIT license](../LICENSE). The original private repository is preserved separately.
 
+The public gallery was later captured from the actual app UI under a host test
+renderer using only invented records. Its fixture, capture method, and checksums
+are documented in [the gallery](gallery/README.md). No private device screenshot
+was reused. The preview APK is the original audited CI artifact, not a build
+containing the fictional fixture; see [preview provenance](try-preview.md).
+
 The weather request identifier uses a public website, as supported by the
 [NWS API documentation](https://www.weather.gov/documentation/services-web-api).

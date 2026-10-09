@@ -1,0 +1,13 @@
+{
+  "renderer": "Actual MainActivity under Robolectric 4.14.1, API 35, native graphics",
+  "qualifiers": "en-rUS-w412dp-h892dp-xhdpi",
+  "data": "Fictional test-only records; no coordinates, media, accounts, or backup destinations",
+  "demo": "17-second slideshow of five real UI captures; not a device screen recording",
+  "files": {
+    "01-observe.png": "30a121e84fa70111f6bea40df634030ef9a24a95af297e5b935ca5648c4d157d",
+    "03-stats.png": "94dd3c2327048365802b5496a6e30b88582b22e2fa4daca5a2d0e240165044f7",
+    "04-history.png": "8404a9704a9b42b3e3977457b14adbb08427cbe7a3e43aaaa84f1fad05aaa2ea",
+    "05-profiles.png": "58447fe9181977b14fcb529dd9e702f356bc015a4b22103ac83c6eb45165885a",
+    "walkthrough.gif": "2e15d8c27ce05fdc71f4761c68a74bf718d2b1b2660bf93156dc8249f9558e2a"
+  }
+}

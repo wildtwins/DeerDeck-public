@@ -1,23 +1,58 @@
 # Withrow DeerDeck
 
-[Source](https://github.com/wildtwins/DeerDeck-public) · [MIT license](LICENSE)
+[![Android CI](https://github.com/wildtwins/DeerDeck-public/actions/workflows/android-ci.yml/badge.svg)](https://github.com/wildtwins/DeerDeck-public/actions/workflows/android-ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B-green.svg)](docs/try-preview.md)
 
-Withrow DeerDeck is a production-candidate Android app for quickly logging wildlife observations in the field. It is local-first: observations, media references, conditions, profiles, and settings stay on the device unless the user explicitly exports, backs up, or shares them.
+**A local-first Android field journal for wildlife watching.** Count sightings
+with a tap, keep notes and optional media, and explore patterns across your outings.
+No DeerDeck account or server is required.
 
-## What It Does
+**[Download the 2.4.4 preview APK](https://github.com/wildtwins/DeerDeck-public/releases/tag/v2.4.4-preview.1)**
+· [Installation and checksum](docs/try-preview.md)
+· [Report an issue](https://github.com/wildtwins/DeerDeck-public/issues)
 
-- Opens directly to a fast wildlife counting grid.
-- Captures optional GPS, sunset, weather, pressure, humidity, wind, and moon context.
-- Records photos, videos, voice notes, descriptors, tags, and session notes.
-- Includes locked Wildlife and Birds profiles that choose offline regional defaults from session GPS.
-- Supports unlimited named custom profiles with editable wildlife, colors, and ordering.
-- Shows 30-day trends, wildlife share, similar days, best conditions, and historical context.
-- Adds Field IQ with personal forecasts, weekly windows, wildlife pairings, location scorecards, condition response, records, discoveries, and return-watch insights.
-- Searches and filters session history, including wildlife, tags, dates, locations, and conditions.
-- Saves media to the camera roll or app storage, according to the user's setting.
-- Creates verified phone or Google Drive backups and full ZIP exports with available media.
-- Restores guarded backups after first creating a safety backup.
-- Automatically ends an abandoned session after three hours of inactivity.
+The preview is **debug-signed and CI-tested**. Physical-device and emulator tests
+were unavailable; use a spare test device with disposable records. It is not a
+Google Play release. Read the installation notes before trying it alongside an
+existing DeerDeck installation.
+
+## A field journal that stays under your control
+
+- **Count quickly:** wildlife tiles, detailed observations, notes, and session tags.
+- **Remember the outing:** optional photos, video, audio, GPS, and field conditions.
+- **See patterns:** sighting trends, wildlife share, similar days, and Field IQ insights
+  calculated from your own history.
+- **Choose your list:** built-in Wildlife and Birds profiles, plus custom profiles.
+- **Keep your data:** local history, searchable sessions, CSV/ZIP exports, and verified
+  phone or user-selected Google Drive backups.
+
+Observations stay on your device unless you choose export, sharing, or backup.
+Android system backup may also preserve app data under your own device account.
+Optional field conditions send session coordinates to NWS and USGS. No personal
+records, credentials, or developer backup destination are included.
+
+## See the app
+
+These are **real app UI captures rendered on a host with Robolectric**, using
+wholly fictional observations. They are not device screenshots or design mockups.
+The downloadable app starts empty. [Capture method and limitations](docs/gallery/README.md).
+
+| Observe and count | Explore statistics |
+| --- | --- |
+| <img src="docs/gallery/01-observe.png" width="300" alt="Actual Observe screen with fictional Demo Meadow sightings"> | <img src="docs/gallery/03-stats.png" width="300" alt="Actual Stats screen with fictional sighting trends"> |
+| **Review history** | **Choose profiles** |
+| <img src="docs/gallery/04-history.png" width="300" alt="Actual History screen with invented sample outings"> | <img src="docs/gallery/05-profiles.png" width="300" alt="Actual Profiles screen showing built-in Wildlife and Birds lists"> |
+
+<details>
+<summary>17-second sample walkthrough</summary>
+
+A slideshow of five actual host-rendered app states, including a count action;
+this is not a device screen recording.
+
+<img src="docs/gallery/walkthrough.gif" width="340" alt="Slideshow of actual app screens with fictional observations">
+
+</details>
 
 ## Stack
 
@@ -74,8 +109,8 @@ device actions, separate from validation. See [the smoke checklist](docs/beta-sm
 
 This distribution excludes field records, camera captures, device screenshots,
 backups, runtime databases, credentials, signing keys, local agent state, and
-prior private Git history. Only the app's launcher artwork and generated store
-branding images are included. See [publication notes](docs/publication.md).
+prior private Git history. The included UI gallery uses only fictional test records; launcher artwork and generated store
+branding images are also included. See [publication notes](docs/publication.md).
 
 ## License
 

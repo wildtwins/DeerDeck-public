@@ -1,0 +1,51 @@
+name: Android CI
+
+on:
+  push:
+    branches: [main, "codex/**"]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v6
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: "tools platform-tools platforms;android-36 build-tools;36.0.0"
+
+      - name: Unit tests
+        run: ./gradlew testDebugUnitTest
+
+      - name: Release checks and builds
+        run: ./gradlew lintRelease bundleRelease assembleDebug
+
+      - name: Upload release candidates
+        uses: actions/upload-artifact@v6
+        with:
+          name: withrow-deerdeck-release-candidates
+          if-no-files-found: error
+          path: |
+            app/build/outputs/bundle/release/app-release.aab
+            app/build/outputs/apk/debug/app-debug.apk
+            app/build/outputs/mapping/release/mapping.txt

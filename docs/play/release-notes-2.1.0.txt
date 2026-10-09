@@ -1,0 +1,1 @@
+Profiles have been rebuilt around two trusted GPS-regional defaults: Wildlife and Birds. Add unlimited custom profiles, customize their wildlife and colors, and preserve the complete profile catalog in verified backups. The Profiles tab replaces the old Wildlife editor, and active sessions now prevent accidental profile switching.

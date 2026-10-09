@@ -1,0 +1,1 @@
+Google Drive backup failures now trigger a clear repair prompt on the Observe screen. Selecting the Drive folder immediately runs and verifies a fresh backup.

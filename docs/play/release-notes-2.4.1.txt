@@ -1,0 +1,3 @@
+Data Health now shows readable summary rows on narrow screens and with larger text.
+
+Condition repair runs immediately with live progress and a clear completion result. Retries protect historical location data and stop after a durable attempt limit.

@@ -1,0 +1,1 @@
+Statistics now include wildlife detail pages, flexible period comparisons, a monthly observation calendar, and a data-health center. Review timing, locations, conditions, field-hour rates, linked media, trends, and incomplete condition records. Safe retries use each session's original stored GPS and never substitute a current location.

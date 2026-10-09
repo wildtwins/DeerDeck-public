@@ -1,0 +1,1 @@
+Backups to Phone and Google Drive are now verified independently. If Drive access expires, the phone backup still protects the session and DeerDeck gives a clear prompt to reconnect the Drive folder.
